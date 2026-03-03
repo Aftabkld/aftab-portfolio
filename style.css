@@ -32,3 +32,22 @@ footer{text-align:center;padding:30px;color:#64748b}
   .hero h1{font-size:34px}
   h2{font-size:28px}
 }
+/* ===== HERO BUTTON RESPONSIVE FIX ===== */
+.hero-actions{
+  display:flex;
+  gap:14px;
+}
+
+/* Mobile fix */
+@media(max-width:600px){
+  .hero-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .hero-actions a{
+    width:100%;
+    text-align:center;
+    margin-right:0; /* IMPORTANT */
+  }
+}
